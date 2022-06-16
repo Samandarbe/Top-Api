@@ -5,6 +5,7 @@ import { AuthModule } from './auth/auth.module';
 import { TopPageModule } from './top-page/top-page.module';
 import { ProductModule } from './product/product.module';
 import { MongooseModule } from '@nestjs/mongoose';
+import { FilesModule } from './files/files.module';
 @Module({
   imports: [
     MongooseModule.forRoot(
@@ -13,6 +14,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     AuthModule,
     TopPageModule,
     ProductModule,
+    FilesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
